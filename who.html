@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name=viewport content='width=700'>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.container{
+position:relative;
+}
+
+ul {
+list-style-type:none; 
+padding:0;
+margin:0;
+overflow:hidden;
+background-color: #f3f3f3;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+top:0;
+width:100%;
+font-family:Aileron;
+}
+
+li {
+ float: right;
+}
+
+li a, .dropbtn {
+ display: block;
+ color:#666;
+ text-align:center;
+ padding: 14px 16px;
+ text-decoration:none;
+}
+
+li a:hover,.dropdown:hover .dropbtn{
+background-color:#ddd;
+color:white;
+
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active{
+background-color:#333;
+}
+
+
+.space{
+    padding:10px;
+    margin: 0 10px;
+}
+.footer{
+background-color:#333;
+color:white;
+font-size:18px;
+width:100%;
+text-align:center;
+font-family:Aileron;
+padding:5px;
+border: 2px solid #333;
+bottom:0;
+left:0;
+position: relative;
+}
+
+.readmore{
+position:relative;
+padding:10px;
+width:30;
+text-align:center;
+font-size:17px;
+color:#333;
+font-family:Aileron;
+margin:auto;
+border: 1px solid #444;
+border-radius:5px;
+transition-duration: 0.4s;
+cursor: pointer;
+opacity:0.8;
+animation-name: fadeInOpacity;
+animation-iteration-count: 1;
+animation-timing-function: ease-in;
+animation-duration: 2s;
+}
+.readmore:hover{
+  background-color:#444;
+  opacity:1;
+  color:white;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<img src="https://images.adsttc.com/media/images/53b2/ac65/c07a/80eb/1c00/0229/large_jpg/WHO_HQ_main_building__Geneva__from_North.jpg?1404218443" alt="who" style="width:100%;filter: grayscale(30%);">
+</div>
+<div class="footer"> All rights reserved. E-forum 2022 </div>
+<div class="long">
+<h2 style="font-family:Aileron;color:white;text-shadow: 1px 1px 3px #222;padding:10 10px;position:absolute;top:20%;left:73%;"> World Health Organization </h2>
+<br>
+<br>
+
+<div style="font-family:Aileron;color:white;text-shadow: 1px 1px 3px #222;padding:10 10px;position:absolute;top:30%;left:73%;text-align:left; width:300px;">
+<p> Founded in 1948, WHO is the United Nations agency that connects nations, partners and people to promote health, keep the world safe and serve the vulnerable – so everyone, everywhere can attain the highest level of health.
+  WHO leads global efforts to expand universal health coverage. We direct and coordinate the world’s response to health emergencies. And we promote healthier lives – from pregnancy care through old age. Our Triple Billion targets outline an ambitious plan for the world to achieve good health for all using science-based policies and programmes. 
+
+</p>
+<a href="https://www.who.int/"><div class="readmore"> Find more </div></a>
+</div>
+
+<ul style="position:fixed;">
+  <img src="https://icon-library.com/images/medical-heart-icon/medical-heart-icon-14.jpg" style="height:40px;width:auto;"> 
+  
+  <li><a href="Contact.html"> Contact </a></li>
+  <li><a href="About us.html"> About us </a></li>
+  <li><a href="blognews.html"> News </a></li>
+  <li><a href="Gallery.html" target="_blank" > Gallery </a></li>
+  <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Categories</a>
+      <div class="dropdown-content">
+        <a href="who.html" class="active" style="color:white;">WHO</a>
+        <a href="cdc.html">CDC</a>
+        <a href="algov.html">AL GOV</a>
+      </div>
+    </li>
+  <li><li><a href="Website.html">Home </a></li>
+  </ul>
+    </div>
+</body>
+</html>

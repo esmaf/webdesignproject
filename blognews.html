@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.container{
+position:relative;
+}
+
+ul {
+list-style-type:none; 
+padding:0;
+margin:0;
+overflow:hidden;
+background-color: #f3f3f3;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+top:0;
+width:100%;
+font-family:Aileron;
+}
+
+li {
+ float: right;
+}
+
+li a, .dropbtn {
+ display: block;
+ color:#666;
+ text-align:center;
+ padding: 14px 16px;
+ text-decoration:none;
+}
+
+li a:hover,.dropdown:hover .dropbtn{
+background-color:#ddd;
+color:white;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active{
+background-color:#333;
+}
+/* Add a gray background color with some padding */
+body {
+  font-family: Aileron;
+  padding:0;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+  color:white;
+  text-shadow: 2px 2px 2px #444;
+  background: url(https://thumbs.dreamstime.com/b/coronavirus-doctor-working-hospital-copy-text-background-banner-doctors-hospitals-fighting-male-protective-suit-mask-178767502.jpg);
+  background-size: 1600px 600px;
+  filter:grayscale(20%);
+  background-repeat:no-repeat;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+  text-align:center;
+}
+.aboutusimg{
+    background-size: 200px 100px;
+    width:100%;
+    padding:20px;
+    border-radius:5px;
+}
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  background-image: url(https://ak.picdn.net/shutterstock/videos/7020988/thumb/1.jpg);
+  background-size: 900px 200px;
+  border-radius:5px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  background-color:#333;
+color:white;
+font-size:18px;
+width:100%;
+text-align:center;
+font-family:Aileron;
+padding:10px;
+border: 3px solid #333;
+bottom:0;
+left:0;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.button{
+position:relative;
+padding:10px;
+width:150px;
+text-align:center;
+font-size:17px;
+color:white;
+font-family:Aileron;
+background-color:#333;
+border-radius:5px;
+
+transition-duration: 0.4s;
+cursor: pointer;
+opacity:0.1;
+animation-name: fadeInOpacity;
+animation-iteration-count: 1;
+animation-timing-function: ease-in;
+animation-duration: 2s;
+}
+
+.button:hover{
+  opacity:0.7;
+  color:white;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2> News Blog </h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>China: Why is the WHO concerned about its zero-Covid strategy?</h2>
+      <h5> May 21, 2022</h5>
+      <p>The World Health Organization (WHO) has said China should rethink its strict Covid strategy aimed at halting the spread of the virus.
+
+        While many countries are now relying on vaccination and improved treatments, China has stuck to a policy of lockdowns and other restrictions.
+        
+        The WHO says that with more transmissible Omicron variants spreading, this approach is not "sustainable."</p>
+      <p>
+        China requires cities to enter strict lockdowns even if just a handful of cases are reported - one of the toughest policies in the world.
+
+With thousands of new cases reported daily during the latest wave, more than 60 million people have been living under some kind of lockdown.
+
+Mass testing has been rolled out in cities such as Shanghai and Beijing, and roads have been blocked to prevent people from travelling.
+      </p>
+    </div>
+
+
+    <div class="card">
+      <h2>North Korea: Fighting Covid with traditional medicine</h2>
+      <h5>May 20, 2022</h5>
+      <p>North Korea is grappling with the spread of Covid in an unvaccinated population, and without access to effective anti-viral drugs people are being advised to try alternative remedies such as drinking herbal tea and gargling salt water.
+        In early 2020, the country sealed its borders to try to insulate itself from the pandemic.
+        Its leadership has so far rejected outside medical support.
+        We've been monitoring state media, which is recommending various traditional treatments to deal with what is referred to as "fever".</p>
+      <p>
+        State media recently interviewed a couple who recommended gargling with salt water morning and night.
+A "thousand of tonnes of salt" had been sent to Pyongyang to make an "antiseptic solution", the state news agency reported.
+Some studies suggest gargling and nasal rinses with salt water could help combat viruses that cause the common cold.
+But there is little evidence they slow the spread of Covid.
+The army has been brought in to distribute medical supplies
+Covid is mainly caught by inhaling tiny droplets in the air via the nose as well as the mouth, so gargling attacks only one point of entry.
+And once the virus has entered, it replicates and spreads deep into the organs, where no amount of gargling can reach.
+Painkillers and antibiotics
+State television has advised patients to use painkillers such as ibuprofen as well as amoxicillin and other antibiotics.
+Ibuprofen (and paracetamol) can bring down a temperature and ease symptoms such as headache or sore throat but they won't clear the virus or prevent it developing.
+Antibiotics, meant for bacterial infections not viruses, are not recommended - and risks developing resistant bugs. 
+      </p>
+    </div>
+    <div class="card">
+      <h2>North Korea: More than a million Covid cases feared</h2>
+      <h5> May 19, 2022</h5>
+      <p>
+        North Korea's leader Kim Jong-un has lambasted health officials and ordered the army to help distribute medicine, as a wave of Covid cases sweeps through the country.
+More than a million people have now been sickened by what Pyongyang is calling a "fever", state media said.
+Some 50 people have died, but it's unclear how many of those suspected cases tested positive for Covid.
+North Korea has only limited testing capacity, so few cases are confirmed.
+North Koreans are likely to be especially vulnerable to the virus due to lack of vaccinations and a poor healthcare system. A nationwide lockdown is in place in the reclusive country.
+State media said Mr Kim led an emergency politburo meeting at the weekend where he accused officials of bungling the distribution of the national medicine reserves.
+He ordered that the "powerful forces" of the army's medical corps step in to "immediately stabilise the supply of medicines in Pyongyang City".
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>United States passes one million Covid deaths</h2>
+      <h5> May 12, 2022</h5>
+      <p>
+        The US has passed more than one million Covid-related deaths, says the White House.
+
+        President Joe Biden said the country was marking "a tragic milestone" and each death was "an irreplaceable loss".
+        
+        It's the highest official total in the world - although the World Health Organization believes the true death toll may be much higher elsewhere.
+        
+        The US has also recorded more than 80 million Covid cases, out of a 330 million population.
+        
+        The first confirmed case was reported on 20 January 2020, when a man flew home to Seattle from Wuhan in China.
+        
+        The 35-year-old survived, after 10 days of pneumonia, coughs, fever, nausea and vomiting. But deaths began to be reported just a few weeks later. 
+      </p>
+    </div>
+
+  </div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <div class="aboutusimg">
+        <img src="https://wallpaperaccess.com/full/4321838.jpg" style="height:150px;border-radius:5px;">
+      </div>
+        <p>We are a research company that provides the latest updates about covid-19 pandemic.
+        </p>
+      <a href="About us.html" ><div class="button" style="text-align:center;"> Find out more </div></a> 
+    </div>
+
+
+    <div class="card">
+      <h3>Advertisment</h3>
+      <img src="https://rinkydoofinance.com/wp-content/uploads/2021/04/signs-you-should-drop-out-of-college-info-02.png" style="height:300px;border-radius:5px;">
+    </div>
+
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>
+      <a href="https://www.instagram.com/esmma.f";>
+        <img  alt="instagram" src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="100" height="100">
+      </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<ul style="position:fixed;">
+    <img src="https://icon-library.com/images/medical-heart-icon/medical-heart-icon-14.jpg" style="height:40px;width:auto;"> 
+    
+    <li><a href="Contact.html"> Contact </a></li>
+    <li><a href="About us.html"> About us </a></li>
+    <li><a href="blognews.html" class="active" style="color:white;"> News </a></li>
+    <li><a href="Gallery.html" target="_blank" > Gallery </a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Categories</a>
+        <div class="dropdown-content">
+          <a href="who.html">WHO</a>
+          <a href="cdc.html">CDC</a>
+          <a href="algov.html">AL GOV</a>
+        </div>
+      </li>
+    <li><a href="Website.html">Home </a></li>
+    </ul>
+    </div>
+
+
+<br> 
+<div class="footer"> All rights reserved. E-forum 2022 </div>
+
+</body>
+</html>
